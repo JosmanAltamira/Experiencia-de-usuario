@@ -21,6 +21,8 @@ import { D3PolarComponent } from './d3/d3-polar.component';
 import { D3AdvancedPieComponent } from './d3/d3-advanced-pie.component';
 import { EchartsLineComponent } from './echarts/echarts-line.component';
 import { EchartsPieComponent } from './echarts/echarts-pie.component';
+import { EchartsPie2Component } from './echarts/echarts-pie2.component';
+
 import { EchartsBarComponent } from './echarts/echarts-bar.component';
 import { EchartsMultipleXaxisComponent } from './echarts/echarts-multiple-xaxis.component';
 import { EchartsAreaStackComponent } from './echarts/echarts-area-stack.component';
@@ -42,6 +44,7 @@ const components = [
   D3AdvancedPieComponent,
   EchartsLineComponent,
   EchartsPieComponent,
+  EchartsPie2Component,
   EchartsBarComponent,
   EchartsMultipleXaxisComponent,
   EchartsAreaStackComponent,

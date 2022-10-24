@@ -30,19 +30,35 @@ export class SmartTableStudentComponent {
         title: 'ID',
         type: 'number',
       },
-      Name: {
+      name: {
         title: 'nombre',
-        type: 'string',
-      },
-      carrera: {
-        title: 'carrera',
         type: 'string',
       },
       email: {
         title: 'correo',
         type: 'string',
       },
+      carrera: {
+        title: 'carrera',
+        type: 'string',
+      },
+      modalidad: {
+        title: 'modalidad',
+        type: 'string',
     },
+    campus: {
+      title: 'campus',
+      type: 'string',
+    },
+    nivel: {
+      title: 'nivel',
+      type: 'string',
+    },
+    grupo: {
+      title: 'grupo',
+      type: 'string',
+    },
+  },
   };
 
   source: LocalDataSource = new LocalDataSource();

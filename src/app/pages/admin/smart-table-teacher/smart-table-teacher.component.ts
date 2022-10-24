@@ -11,6 +11,7 @@ import { SmartTableTeacherData } from '../../../@core/data/smart-table-teacher';
 export class SmartTableTeacherComponent {
 
   settings = {
+    selectMode: 'multi',
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
       createButtonContent: '<i class="nb-checkmark"></i>',
@@ -25,12 +26,14 @@ export class SmartTableTeacherComponent {
       deleteButtonContent: '<i class="nb-trash"></i>',
       confirmDelete: true,
     },
+ 
+
     columns: {
       id: {
         title: 'ID',
         type: 'number',
       },
-      Name: {
+      name: {
         title: 'nombre',
         type: 'string',
       },

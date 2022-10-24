@@ -19,7 +19,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/admin/smart-table-manager',
       },
       {
-        title: 'Grupos',
+        title: 'Resultados Grupos',
         link: '/pages/charts/echarts',
       },
       {

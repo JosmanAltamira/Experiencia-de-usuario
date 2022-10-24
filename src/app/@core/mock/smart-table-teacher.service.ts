@@ -16,7 +16,7 @@ export class SmartTableTeacherService extends SmartTableTeacherData {
     email: 'fat@yandex.ru',
   }, {
     id: 3,
-    Name: 'Larry',
+    name: 'Larry',
     carrera: 'Bird',
     email: 'twitter@outlook.com',
   } ];

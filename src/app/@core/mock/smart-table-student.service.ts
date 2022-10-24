@@ -7,18 +7,30 @@ export class SmartTableStudentService extends SmartTableStudentData {
   data = [{
     id: 1,
     name: 'Mark',
-    carrera: 'Otto',
     email: 'mdo@gmail.com',
+    carrera:'IDGS',
+    modalidad:'ESCOLARIZADA',
+    campus:'TOLUCA',
+    nivel:'7',
+    grupo:'A',
   }, {
     id: 2,
     name: 'Jacob',
-    carrera: 'Thornton',
     email: 'fat@yandex.ru',
+    carrera:'IDGS',
+    modalidad:'ESCOLARIZADA',
+    campus:'TOLUCA',
+    nivel:'7',
+    grupo:'A',
   }, {
     id: 3,
-    Name: 'Larry',
-    carrera: 'Bird',
+    name: 'Larry',
     email: 'twitter@outlook.com',
+    carrera:'IDGS',
+    modalidad:'ESCOLARIZADA',
+    campus:'TOLUCA',
+    nivel:'7',
+    grupo:'A',
   } ];
 
   getData() {
