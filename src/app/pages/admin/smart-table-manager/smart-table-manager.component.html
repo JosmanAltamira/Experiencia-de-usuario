@@ -1,0 +1,21 @@
+<nb-card>
+  <nb-card-header>
+    Jefes de carrera
+  </nb-card-header>
+
+  <nb-card-body>
+  
+    <div class="row nb-1">
+      <div class="col-md-4">
+        <button nbButton [status]="'primary'">
+          Carga masiva
+        </button>
+      </div>
+      <label class="search-label" for="search">Search:</label>
+      <input nbInput  id="search" class="search-input">
+</div>
+<br>
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
