@@ -1,0 +1,21 @@
+<nb-card>
+  <nb-card-header>
+    Coevaluación
+  </nb-card-header>
+
+  <nb-card-body>
+  
+<br>
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+  <br>
+  <div class="row nb-6">
+    <div class="col-md-11">
+      <button nbButton [status]="'primary'" class="float-right">
+        Enviar
+      </button>
+    </div>  
+</div>
+ <br>
+</nb-card>

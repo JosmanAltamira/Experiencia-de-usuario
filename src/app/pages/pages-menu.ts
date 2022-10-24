@@ -36,6 +36,19 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Alumnos',
     icon: 'award-outline',
-    link: '/pages/admin/smart-table-student',
+    children: [
+      {
+        title: 'Anuncios',
+        link: '/pages/ui-features/search-fields',
+      },
+      {
+        title: 'Registro',
+        link: '/pages/admin/smart-table-student',
+      },
+      {
+        title: 'Coevaluación',
+        link: '/pages/admin/smart-table-coe',
+      },
+    ],
   },
 ];

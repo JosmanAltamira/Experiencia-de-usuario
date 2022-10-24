@@ -5,6 +5,7 @@ import { TablesComponent } from './admin.component';
 import { SmartTableManagerComponent } from './smart-table-manager/smart-table-manager.component';
 import { SmartTableTeacherComponent } from './smart-table-teacher/smart-table-teacher.component';
 import { SmartTableStudentComponent } from './smart-table-student/smart-table-student.component';
+import { SmartTableCoeComponent } from './smart-table-coe/smart-table-coe.component';
 
 import { TreeGridComponent } from './tree-grid/tree-grid.component';
 
@@ -25,6 +26,10 @@ const routes: Routes = [{
       component: SmartTableStudentComponent,
     },
     {
+      path: 'smart-table-coe',
+      component: SmartTableCoeComponent,
+    },
+    {
       path: 'tree-grid',
       component: TreeGridComponent,
     },
@@ -42,5 +47,6 @@ export const routedComponents = [
   SmartTableManagerComponent,
   SmartTableTeacherComponent,
   SmartTableStudentComponent,
+  SmartTableCoeComponent,
   TreeGridComponent,
 ];

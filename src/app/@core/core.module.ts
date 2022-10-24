@@ -20,6 +20,7 @@ import { SmartTableData } from './data/smart-table';
 import { SmartTableManagerData } from './data/smart-table-manager';
 import { SmartTableStudentData } from './data/smart-table-student';
 import { SmartTableTeacherData } from './data/smart-table-teacher';
+import { SmartTableCoeData } from './data/smart-table-coe';
 
 import { UserActivityData } from './data/user-activity';
 import { OrdersChartData } from './data/orders-chart';
@@ -46,6 +47,7 @@ import { SmartTableService } from './mock/smart-table.service';
 import { SmartTableManagerService } from './mock/smart-table-manager.service';
 import { SmartTableStudentService } from './mock/smart-table-student.service';
 import { SmartTableTeacherService } from './mock/smart-table-teacher.service';
+import { SmartTableCoeService } from './mock/smart-table-coe.service';
 
 import { UserActivityService } from './mock/user-activity.service';
 import { OrdersChartService } from './mock/orders-chart.service';
@@ -93,6 +95,7 @@ const DATA_SERVICES = [
   { provide: SmartTableManagerData, useClass: SmartTableManagerService },
   { provide: SmartTableStudentData, useClass: SmartTableStudentService },
   { provide: SmartTableTeacherData, useClass: SmartTableTeacherService },
+  { provide: SmartTableCoeData, useClass: SmartTableCoeService },
 
   { provide: UserActivityData, useClass: UserActivityService },
   { provide: OrdersChartData, useClass: OrdersChartService },
