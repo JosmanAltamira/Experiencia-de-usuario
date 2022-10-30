@@ -2,6 +2,7 @@
 @import '~@nebular/theme/styles/theming';
 // @nebular out of the box themes
 @import '~@nebular/theme/styles/themes';
+@import '~@nebular/theme/styles/themes/default';
 
 $nb-themes: nb-register-theme((
   layout-padding-top: 2.25rem,
@@ -22,6 +23,32 @@ $nb-themes: nb-register-theme((
   slide-out-background: #f7f9fc,
   slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+
+  //sidebar
+  sidebar-background-color: #00d68f,
+  menu-text-color: #fff,
+  menu-group-text-color: #fff,
+  menu-item-icon-color: #fff,
+  menu-item-icon-active-color: #0f74a3,
+  menu-item-active-text-color: #0f74a3,
+  menu-item-divider-color: #00d68f,
+
+
+  //header
+  header-background-color: #00d68f,
+  header-text-color: #fff,
+
+  color-primary-100: #CAFCD8,
+  color-primary-200: #96FABB,
+  color-primary-300: #61F2A5,
+  color-primary-400: #39E69C,
+  color-primary-500: #00D68F,
+  color-primary-600: #00B88D,
+  color-primary-700: #009A85,
+  color-primary-800: #007C77,
+  color-primary-900: #006066,
+
+
 ), default, default);
 
 $nb-themes: nb-register-theme((
@@ -86,3 +113,40 @@ $nb-themes: nb-register-theme((
   slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
 ), dark, dark);
+
+$nb-themes: nb-register-theme((
+
+  color-primary-100: #faf7ff,
+  // <- primary violet shades
+  color-primary-200: #ece3ff,
+  color-primary-300: #d5bfff,
+  color-primary-400: #b18aff,
+  color-primary-500: #a16eff,
+  color-primary-600: #7b51db,
+  color-primary-700: #5a37b8,
+  color-primary-800: #3e2494,
+  color-primary-900: #29157a,
+  color-basic-100: white,
+  color-basic-200: #eefafc,
+  color-basic-300: #e8f5fa,
+  color-basic-400: #d6e6f2,
+  color-basic-500: #c7dbeb,
+  color-basic-600: #a9c0db,
+  color-basic-700: #497d8e,
+  color-basic-800: #336a77,
+  color-basic-900: #295c66,
+  color-basic-1000: #244555,
+  color-basic-1100: #121a2b,
+  background-basic-color-1: color-basic-700,
+  background-basic-color-2: color-basic-800,
+  background-basic-color-3: color-basic-900,
+  background-basic-color-4: color-basic-100,
+  border-basic-color-1: color-basic-700,
+  border-basic-color-2: color-basic-800,
+  border-basic-color-3: color-basic-900,
+  border-basic-color-4: color-basic-1000,
+  border-basic-color-5: color-basic-1100,
+  shadow: 0 0.5rem 1rem 0 rgba(25, 30, 51, 0.24),
+  text-disabled-color: color-basic-600,
+
+), custom, default);

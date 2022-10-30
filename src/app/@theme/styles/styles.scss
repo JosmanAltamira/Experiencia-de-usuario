@@ -31,3 +31,18 @@
 
   @include nb-overrides();
 };
+
+//sidebar
+.nb-theme-default .header-container .sidebar-toggle {
+  text-decoration: none;
+  color: #f7f9fc !important;
+}
+
+//user name
+.nb-theme-default nb-user .user-name {
+  color: #f7f9fc;
+}
+
+.nb-theme-default nb-menu {
+  background-color: #00d68f;
+}
