@@ -22,7 +22,7 @@ export class EchartsPie2Component implements AfterViewInit, OnDestroy {
 
       this.options = {
         backgroundColor: echarts.bg,
-        color: [colors.warningLight, colors.infoLight, colors.dangerLight, colors.successLight, colors.primaryLight],
+        color: [   colors.successLight, colors.primaryLight],
         tooltip: {
           trigger: 'item',
           formatter: '{a} <br/>{b} : {c} ({d}%)',
@@ -42,8 +42,8 @@ export class EchartsPie2Component implements AfterViewInit, OnDestroy {
             radius: '80%',
             center: ['50%', '50%'],
             data: [
-              { value: 410, name: '10 IDGS' },
-              { value: 335, name: '7 IDGS' },
+              { value: 110, name: '10 IDGS' },
+              { value: 235, name: '7 IDGS' },
             ],
             itemStyle: {
               emphasis: {

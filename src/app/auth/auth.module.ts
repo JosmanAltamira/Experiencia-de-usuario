@@ -8,6 +8,7 @@ import { NbAuthModule } from '@nebular/auth';
 import { NbAlertModule, NbButtonModule, NbCheckboxModule, NbInputModule, NbIconModule } from '@nebular/theme';
 
 import { NgxLoginComponent } from './login/login.component';
+import {  NbPasswordAuthStrategy } from '@nebular/auth';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { NgxLoginComponent } from './login/login.component';
     NgxAuthRoutingModule,
     NbIconModule,
     NbAuthModule,
+
   ],
   declarations: [
     NgxLoginComponent,

@@ -3,8 +3,12 @@
     display: none !important;
   }
 </style>
+ 
+<!-- <h1 id="title" class="title">UTCV</h1> -->
+<div style=" text-align:center">
+  <img src="./assets/logo/logo.png" width="150" height="150"  >
+</div>
 
-<h1 id="title" class="title">Inicio de sesión </h1>
 <p class="sub-title">¡Hola!Inicie sesión con su correo electrónico.</p>
 
 <nb-alert *ngIf="showMessages.error && errors?.length && !submitted" outline="danger" role="alert">
@@ -90,35 +94,10 @@
           size="large"
           [disabled]="submitted || !form.valid"
           [class.btn-pulse]="submitted"
-          routerLink="/pages/dashboard">
+          routerLink="/pages/iot-dashboard"
+         >
   Iniciar sesión
   </button>
 </form>
 
-<section *ngIf="socialLinks && socialLinks.length > 0" class="links" aria-label="Social sign in">
- o ingrese con:
-  <div class="socials">
-    <ng-container *ngFor="let socialLink of socialLinks">
-      <a *ngIf="socialLink.link"
-         [routerLink]="socialLink.link"
-         [attr.target]="socialLink.target"
-         [attr.class]="socialLink.icon"
-         [class.with-icon]="socialLink.icon">
-        <nb-icon *ngIf="socialLink.icon; else title" [icon]="socialLink.icon"></nb-icon>
-        <ng-template #title>{{ socialLink.title }}</ng-template>
-      </a>
-      <a *ngIf="socialLink.url"
-         [attr.href]="socialLink.url"
-         [attr.target]="socialLink.target"
-         [attr.class]="socialLink.icon"
-         [class.with-icon]="socialLink.icon">
-        <nb-icon *ngIf="socialLink.icon; else title" [icon]="socialLink.icon"></nb-icon>
-        <ng-template #title>{{ socialLink.title }}</ng-template>
-      </a>
-    </ng-container>
-  </div>
-</section>
 
-<section class="another-action" aria-label="Register">
- ¿No tienes una cuenta? <a class="text-link" routerLink="../register">Registro</a>
-</section>

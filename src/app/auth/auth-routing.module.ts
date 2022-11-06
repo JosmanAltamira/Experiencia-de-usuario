@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NbAuthComponent } from '@nebular/auth';
 import { NgxLoginComponent } from './login/login.component';
+import { NbAuthModule, NbDummyAuthStrategy } from '@nebular/auth';
 
 export const routes: Routes = [
   {

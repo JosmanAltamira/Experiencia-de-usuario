@@ -7,7 +7,7 @@ import { SmartTableTeacherComponent } from './smart-table-teacher/smart-table-te
 import { SmartTableStudentComponent } from './smart-table-student/smart-table-student.component';
 import { SmartTableCoeComponent } from './smart-table-coe/smart-table-coe.component';
 
-import { TreeGridComponent } from './tree-grid/tree-grid.component';
+import { CargaMasivaComponent } from './carga-masiva/carga-masiva.component';
 
 const routes: Routes = [{
   path: '',
@@ -30,8 +30,8 @@ const routes: Routes = [{
       component: SmartTableCoeComponent,
     },
     {
-      path: 'tree-grid',
-      component: TreeGridComponent,
+      path: 'carga-masiva',
+      component: CargaMasivaComponent,
     },
   ],
 }];
@@ -48,5 +48,5 @@ export const routedComponents = [
   SmartTableTeacherComponent,
   SmartTableStudentComponent,
   SmartTableCoeComponent,
-  TreeGridComponent,
+  CargaMasivaComponent,
 ];

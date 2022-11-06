@@ -71,6 +71,21 @@ const routes: Routes = [{
         .then(m => m.AdminModule),
     },
     {
+      path: 'student',
+      loadChildren: () => import('./student/student.module')
+        .then(m => m.StudentModule),
+    },
+    {
+      path: 'manager',
+      loadChildren: () => import('./manager/manager.module')
+        .then(m => m.ManagerModule),
+    },
+    {
+      path: 'teacher',
+      loadChildren: () => import('./teacher/teacher.module')
+        .then(m => m.TeacherModule),
+    },
+    {
       path: 'miscellaneous',
       loadChildren: () => import('./miscellaneous/miscellaneous.module')
         .then(m => m.MiscellaneousModule),

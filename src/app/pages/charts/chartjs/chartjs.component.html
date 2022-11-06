@@ -2,16 +2,30 @@
 
   <div class="col-lg-6">
     <nb-card>
-      <nb-card-header>Primer parcial</nb-card-header>
+      <nb-card-header style=" text-align:center">
+        <nb-select selected="1" [status]="'primary'" hero>
+          <nb-option value="1">Periodo</nb-option>
+          <nb-option value="2">enero</nb-option>
+          <nb-option value="2">abril</nb-option>
+        </nb-select>
+      </nb-card-header>
       <nb-card-body>
+        <h6 class="text-success" style=" text-align:center">Primer Parcial</h6>
         <ngx-chartjs-bar-horizontal></ngx-chartjs-bar-horizontal>
       </nb-card-body>
     </nb-card>
   </div>
   <div class="col-lg-6">
     <nb-card>
-      <nb-card-header>Parcial final</nb-card-header>
+      <nb-card-header style=" text-align:center"> 
+          <nb-select selected="1" [status]="'primary'" hero>
+            <nb-option value="1">Año</nb-option>
+            <nb-option value="2">2022</nb-option>
+            <nb-option value="2">2021</nb-option>
+          </nb-select>
+     </nb-card-header>
       <nb-card-body>
+        <h6 class="text-success" style=" text-align:center">Parcial final</h6>
         <ngx-chartjs-bar-horizontal></ngx-chartjs-bar-horizontal>
       </nb-card-body>
     </nb-card>

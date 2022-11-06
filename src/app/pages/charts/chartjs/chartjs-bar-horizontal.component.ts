@@ -22,7 +22,7 @@ export class ChartjsBarHorizontalComponent implements OnDestroy {
         labels: ['60', '70', '90'],
         datasets: [{
             label: 'Evaluaciones',
-            backgroundColor: colors.infoLight,
+            backgroundColor: colors.successLight,
             borderWidth: 1,
             data: [this.random(), this.random(), this.random(), this.random(), this.random(), this.random()],
           }, 

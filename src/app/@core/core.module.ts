@@ -1,6 +1,6 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbAuthModule, NbDummyAuthStrategy } from '@nebular/auth';
+import { NbAuthModule, NbDummyAuthStrategy,  NbPasswordAuthStrategy,} from '@nebular/auth';
 import { NbSecurityModule, NbRoleProvider } from '@nebular/security';
 import { of as observableOf } from 'rxjs';
 
@@ -131,7 +131,10 @@ export const NB_CORE_PROVIDERS = [
       NbDummyAuthStrategy.setup({
         name: 'email',
         delay: 3000,
+        
       }),
+      
+  
     ],
     forms: {
       login: {
@@ -141,6 +144,7 @@ export const NB_CORE_PROVIDERS = [
         socialLinks: socialLinks,
       },
     },
+    
   }).providers,
 
   NbSecurityModule.forRoot({

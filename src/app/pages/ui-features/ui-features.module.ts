@@ -6,12 +6,12 @@ import { UiFeaturesRoutingModule } from './ui-features-routing.module';
 import { UiFeaturesComponent } from './ui-features.component';
 
 
-import { SearchComponent } from './search-fields/search-fields.component';
+import { AnunciosComponent } from './anuncios/anuncios.component';
 
 const components = [
   UiFeaturesComponent,
 
-  SearchComponent,
+  AnunciosComponent,
 ];
 
 @NgModule({

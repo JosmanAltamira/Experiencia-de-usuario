@@ -4,15 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { UiFeaturesComponent } from './ui-features.component';
 
 
-import { SearchComponent } from './search-fields/search-fields.component';
+import { AnunciosComponent } from './anuncios/anuncios.component';
 
 const routes: Routes = [{
   path: '',
   component: UiFeaturesComponent,
   children: [ 
   {
-    path: 'search-fields',
-    component: SearchComponent,
+    path: 'anuncios',
+    component: AnunciosComponent,
   }],
 }];
 

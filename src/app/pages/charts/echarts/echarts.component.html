@@ -1,7 +1,14 @@
 <div class="row">
   <div class="col-lg-6">
+
     <nb-card>
-      <nb-card-header>Periodo</nb-card-header>
+      <nb-card-header style=" text-align:center">
+        <nb-select selected="1" [status]="'primary'" hero>
+          <nb-option value="1">Periodo</nb-option>
+          <nb-option value="2">enero</nb-option>
+          <nb-option value="2">abril</nb-option>
+        </nb-select>
+      </nb-card-header>
       <nb-card-body>
         <ngx-echarts-pie></ngx-echarts-pie>
       </nb-card-body>
@@ -9,7 +16,13 @@
   </div>
   <div class="col-lg-6">
     <nb-card>
-      <nb-card-header>Año</nb-card-header>
+      <nb-card-header style=" text-align:center">
+        <nb-select selected="1" [status]="'primary'" hero>
+          <nb-option value="1">Año</nb-option>
+          <nb-option value="2">2020</nb-option>
+          <nb-option value="2">2021</nb-option>
+        </nb-select>
+      </nb-card-header>
       <nb-card-body>
         <ngx-echarts-pie2></ngx-echarts-pie2>
       </nb-card-body>

@@ -7,48 +7,85 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/iot-dashboard',
   },
   {
-    title: 'Administradores',
-    group: true,
+    title: 'Administrador',
+    icon: 'settings-2-outline',
+    children: [
+      {
+        title: 'Registro alumnos',
+        link: '/pages/admin/smart-table-student',
+        icon: 'edit-outline',
+      },
+      {
+        title: 'Registro profesores',
+        link: '/pages/admin/smart-table-teacher',
+        icon: 'edit-outline',
+      },
+      {
+        title: 'Registro Jefes de carrera',
+        link: '/pages/admin/smart-table-manager',
+        icon: 'edit-outline',
+      },
+    ],
   },
   {
     title: 'Jefe de carrera',
     icon: 'person-outline',
     children: [
-      {
-        title: 'Registro',
-        link: '/pages/admin/smart-table-manager',
-      },
-      {
-        title: 'Resultados Grupos',
+            {
+        title: 'Resultados Evaluaciones',
         link: '/pages/charts/echarts',
+        icon: 'pie-chart-outline',
       },
       {
-        title: 'Resultados parciales',
-        link: '/pages/charts/chartjs',
+        title: 'Asignaciones',
+        link: '/pages/admin/',
       },
+
     ],
-  },
-  {
-    title: 'Profesores',
-    icon: 'people-outline',
-    link: '/pages/admin/smart-table-teacher',
   },
   {
     title: 'Alumnos',
     icon: 'award-outline',
     children: [
       {
-        title: 'Anuncios',
-        link: '/pages/ui-features/search-fields',
-      },
-      {
-        title: 'Registro',
-        link: '/pages/admin/smart-table-student',
+        title: 'Tablero',
+        link: '/pages/ui-features/anuncios',
+        icon: 'grid-outline',
+        badge: {
+          text: '1+',
+          status: 'warning',
+        },
       },
       {
         title: 'Coevaluación',
         link: '/pages/admin/smart-table-coe',
+        icon: 'clipboard-outline',
       },
     ],
+  },
+  {
+    title: 'Profesores',
+    icon: 'people-outline',
+    children: [
+      {
+        title: 'Grupos',
+        link: '/pages/teacher/tree-grid',
+      },
+      {
+        title: 'Resultados',
+        link: '/pages/charts/chartjs',
+        icon: 'bar-chart-2-outline',
+      },
+      {
+        title: 'Asignar de alumnos',
+        link: '',
+        
+      },
+    ],
+  },
+  {
+    icon: 'log-in-outline',
+    title: 'Cerrar sesión',
+    link: '/auth/login',
   },
 ];
